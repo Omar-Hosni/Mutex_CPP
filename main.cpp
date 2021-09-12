@@ -26,7 +26,7 @@ std::mutex m;
 
 void add_to_list(int const& x) {
 	lock_guard<mutex> lg(m);
-	my_list.push_back(x);
+	my_list.push_front(x);
 
 	
 }
